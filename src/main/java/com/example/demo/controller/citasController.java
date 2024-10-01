@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("/citas")
-public class citasController {
+public class CitasController {
 
     @Autowired
     private PacienteService pacienteService;

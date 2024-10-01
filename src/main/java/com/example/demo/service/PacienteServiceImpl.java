@@ -5,8 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Paciente;
 import com.example.demo.repository.PacienteRepository;
-import com.example.demo.repository.CentroMedicoRepository;
-
+ 
 import java.util.List;
 import java.util.Optional;
 
@@ -16,8 +15,7 @@ public class PacienteServiceImpl implements PacienteService {
     @Autowired
     private PacienteRepository pacienteRepository;
 
-    @Autowired
-    private CentroMedicoRepository centroMedicoRepository;
+     
 
     @Override
     public List<Paciente> getAllPacientes() {
@@ -50,5 +48,7 @@ public class PacienteServiceImpl implements PacienteService {
     public void deletePaciente(Long id) {
         pacienteRepository.deleteById(id);
     }
+
+ 
 }
 
